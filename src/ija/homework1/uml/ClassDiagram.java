@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClassDiagram extends Element {
-    private final List<UMLClassifier> classArr = new ArrayList<>();
+    private final List<UMLClassifier> classArr;
 
     public ClassDiagram(String name) {
         super(name);
+        this.classArr = new ArrayList<>();
     }
 
     public UMLClass createClass(String name) {

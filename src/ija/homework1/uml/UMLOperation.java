@@ -5,10 +5,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class UMLOperation extends UMLAttribute{
-    private final List<UMLAttribute> args = new ArrayList<>();
+    private final List<UMLAttribute> args;
 
     public UMLOperation(String name, UMLClassifier type) {
         super(name, type);
+        this.args = new ArrayList<>();
     }
 
     public static UMLOperation create(String name, UMLClassifier type, UMLAttribute... args) {

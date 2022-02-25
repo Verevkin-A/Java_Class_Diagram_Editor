@@ -6,11 +6,12 @@ import java.util.List;
 
 public class UMLClass extends UMLClassifier{
     private boolean isAbstract;
-    private final List<UMLAttribute> attrArr = new ArrayList<>();
+    private final List<UMLAttribute> attrArr;
 
     public UMLClass(String name) {
         super(name);
         this.isAbstract = false;
+        this.attrArr = new ArrayList<>();
     }
 
     public boolean isAbstract() {

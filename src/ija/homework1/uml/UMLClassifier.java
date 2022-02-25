@@ -21,6 +21,7 @@ public class UMLClassifier extends Element{
         return this.isUserDefined;
     }
 
+    @Override
     public String toString() {
         return String.format("%s(%b)", super.getName(), isUserDefined);
     }
